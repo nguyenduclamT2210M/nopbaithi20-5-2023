@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "baitapcuoiky": {
+    "baithiAJS": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,11 +13,12 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/baitapcuoiky",
+            "outputPath": "dist/baithi-ajs",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
-              "zone.js"
+              "zone.js",
+              "src/bootstrap.bundle.min.js"
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
@@ -25,8 +26,8 @@
               "src/assets"
             ],
             "styles": [
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
+              "src/bootstrap.css"
             ],
             "scripts": []
           },
@@ -61,10 +62,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "baitapcuoiky:build:production"
+              "browserTarget": "baithiAJS:build:production"
             },
             "development": {
-              "browserTarget": "baitapcuoiky:build:development"
+              "browserTarget": "baithiAJS:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -72,7 +73,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "baitapcuoiky:build"
+            "browserTarget": "baithiAJS:build"
           }
         },
         "test": {
@@ -94,10 +95,9 @@
           }
         }
       }
-     }
-    },
-    "cli": {
-      "analytics": "6b9291b6-5c6e-4ae7-b399-89fea45610c3"
     }
+  },
+  "cli": {
+    "analytics": "75fa7bfe-c1d0-44ce-836b-bd865da49137"
   }
-
+}
