@@ -1,0 +1,72 @@
+<div class="container">
+
+  <div class="row">
+    <div class="col-4">
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+              Favorites
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+            <div class="accordion-body">
+              <div>
+                <a class="nav-link" routerLink="/">Inbox</a>
+                <div class="text-success">
+                  <hr>
+                </div>
+                <a class="nav-link" routerLink="/sent">Sent Items</a>
+              </div>
+
+              </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+              John
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+            <div class="accordion-body">
+              <div>
+                <a class="nav-link" routerLink="/">Inbox</a>
+                <div class="text-success">
+                  <hr>
+                </div>
+                <a class="nav-link" routerLink="/">Drafts</a>
+                <div class="text-success">
+                  <hr>
+                </div>
+                <a class="nav-link" routerLink="/">Deleted Items</a>
+                <div class="text-success">
+                  <hr>
+                </div>
+                <a class="nav-link" routerLink="/">Sent Items</a>
+                <div class="text-success">
+                  <hr>
+                </div>
+                <a class="nav-link" routerLink="/">Outbox</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    <div class="col-8">
+      <section>
+        <div class="container">
+          <router-outlet></router-outlet>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+
